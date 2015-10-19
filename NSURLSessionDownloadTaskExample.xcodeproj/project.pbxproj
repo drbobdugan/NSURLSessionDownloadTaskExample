@@ -15,6 +15,7 @@
 		2820692A1BD18AC200B876E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282069281BD18AC200B876E3 /* LaunchScreen.storyboard */; };
 		282069351BD18AC200B876E3 /* NSURLSessionDownloadTaskExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 282069341BD18AC200B876E3 /* NSURLSessionDownloadTaskExampleTests.m */; };
 		282069401BD18AC200B876E3 /* NSURLSessionDownloadTaskExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2820693F1BD18AC200B876E3 /* NSURLSessionDownloadTaskExampleUITests.m */; };
+		2820694E1BD1931900B876E3 /* BackgroundTimeRemainingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2820694D1BD1931900B876E3 /* BackgroundTimeRemainingUtility.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2820693B1BD18AC200B876E3 /* NSURLSessionDownloadTaskExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSURLSessionDownloadTaskExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2820693F1BD18AC200B876E3 /* NSURLSessionDownloadTaskExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionDownloadTaskExampleUITests.m; sourceTree = "<group>"; };
 		282069411BD18AC200B876E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2820694D1BD1931900B876E3 /* BackgroundTimeRemainingUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTimeRemainingUtility.m; sourceTree = "<group>"; };
+		2820694F1BD1933700B876E3 /* BackgroundTimeRemainingUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundTimeRemainingUtility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 			children = (
 				2820691D1BD18AC200B876E3 /* AppDelegate.h */,
 				2820691E1BD18AC200B876E3 /* AppDelegate.m */,
+				2820694F1BD1933700B876E3 /* BackgroundTimeRemainingUtility.h */,
+				2820694D1BD1931900B876E3 /* BackgroundTimeRemainingUtility.m */,
 				282069201BD18AC200B876E3 /* ViewController.h */,
 				282069211BD18AC200B876E3 /* ViewController.m */,
 				282069231BD18AC200B876E3 /* Main.storyboard */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2820694E1BD1931900B876E3 /* BackgroundTimeRemainingUtility.m in Sources */,
 				282069221BD18AC200B876E3 /* ViewController.m in Sources */,
 				2820691F1BD18AC200B876E3 /* AppDelegate.m in Sources */,
 				2820691C1BD18AC200B876E3 /* main.m in Sources */,
@@ -414,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NSURLSessionDownloadTaskExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stonehill.edu.NSURLSessionDownloadTaskExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NSURLSessionDownloadTaskExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stonehill.edu.NSURLSessionDownloadTaskExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

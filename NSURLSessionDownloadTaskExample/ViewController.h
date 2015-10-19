@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <NSURLSessionDelegate, NSURLSessionTaskDelegate,
+NSURLSessionDownloadDelegate, UITextFieldDelegate>
 
+// State information
+@property (nonatomic, weak) NSURLSession *session;
+@property (nonatomic, strong) NSDate *startTime;
+
+// Linked to UI components
+@property (weak, nonatomic) IBOutlet UITextView *URL;
+@property (weak, nonatomic) IBOutlet UILabel *state;
+@property (weak, nonatomic) IBOutlet UILabel *downloadPercentage;
+@property (weak, nonatomic) IBOutlet UILabel *time;
+- (IBAction)buttonPressed:(id)sender;
 
 @end
 
