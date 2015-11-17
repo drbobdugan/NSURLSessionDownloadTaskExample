@@ -63,8 +63,8 @@
         NSURLSessionConfiguration *configuration =  [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"stonehill.edu.NSURLSessionDownloadTaskExample"];
         
         configuration.allowsCellularAccess = NO;
-        configuration.timeoutIntervalForRequest = 30.0;
-        configuration.timeoutIntervalForResource = 60.0;
+        configuration.timeoutIntervalForRequest = 300;
+        configuration.timeoutIntervalForResource = 300;
         configuration.HTTPMaximumConnectionsPerHost = 1;
         configuration.sessionSendsLaunchEvents = YES;
         configuration.discretionary = YES;
